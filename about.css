@@ -1,0 +1,300 @@
+
+.menu-container {
+	width: 1152px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.nav-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-wrapper ul.nav-list {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.nav-wrapper ul.nav-list li {
+	margin-left: 30px;
+	padding: 20px 0;
+	position: relative;
+}
+
+.nav-wrapper ul.nav-list li a {
+	color: var(--third-color);
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease-in-out;
+}
+
+.nav-wrapper ul.nav-list li a:hover,
+.nav-wrapper ul.nav-list li.active a {
+	color: var(--blue-color);
+}
+
+
+
+.nav-wrapper .nav-list li .btn a {
+	color: var(--fourth-color);
+}
+
+.nav-wrapper .nav-list li .btn:hover a {
+	color: var(--third-color);
+}
+
+@keyframes moveUp {
+	0% {
+		opacity: 0;
+		transform: translateX(-50%) translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(-50%) translateY(20px);
+	}
+}
+.breadcrumbs
+{
+	background: linear-gradient(rgba(150, 60, 221, 0.1), rgba(17, 17, 69, 0.8)), url('../img/about-bread.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.breadcrumb-container
+{
+	height: 34vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.breadcrumb-container .hero-heading
+{
+	font-size: 3rem;
+}
+
+
+
+/*------------------ Future protection styling ----------------*/
+.future-protection-imgs
+{
+	margin: 2rem 0;
+}
+
+.future-protection-img
+{
+	border-radius: 6px;
+	width: 400px;
+	height: 300px;
+}
+/*------------------ Future protection styling ----------------*/
+
+
+
+
+  .video-container {
+  	position: relative;
+  	width: 100%;
+  	height: 0;
+  	padding-bottom: 56.25%;
+  	
+  	overflow: hidden;
+  }
+
+  .video-container iframe {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 80%;
+  	height: 80%;
+  }
+
+
+/*----------------------------- Key Numbers ------------------------------*/
+.key-numbers
+{
+	background: linear-gradient(rgba(10, 17, 79, 0.9), rgba(10, 17, 79, 0.9)), url("../img/hero-bg.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.key-num-row
+{
+	margin: 3rem 0;
+}
+
+.key-no-img
+{
+	border-radius: 6px;
+}
+
+.key-number
+{
+	margin: 2rem 0;
+	padding: 1rem;
+	background: #ffffff;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.key-number .heading
+{
+	font-size: 2.2rem;
+	line-height: 1;
+}
+
+.key-number .para-line
+{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+/*----------------------------- Key Numbers ------------------------------*/
+
+/*------------------------------- Our Team -------------------------------------*/
+.team-members
+{
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.team-member .member-img
+{
+	border-radius: 6px;
+}
+
+.team-member .member-content
+{
+	padding: 1rem;
+}
+
+.team-member .member-designation
+{
+	font-size: 0.8rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.team-member .member-name
+{
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin: 0.6rem 0;
+}
+/*------------------------------- Our Team -------------------------------------*/
+
+
+
+/*--------------------------------- About CTA -------------------------------------*/
+.about-cta
+{
+	background: linear-gradient(rgba(10, 17, 79, 0.9), rgba(10, 17, 79, 0.9)), url("../img/hero-bg.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.about-cta .container .row
+{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+/*--------------------------------- About CTA -------------------------------------*/
+
+@media screen and (min-width: 789px)
+{
+	/*----------- Breadcrumb styling ----------*/
+	.breadcrumb-container 
+	{
+		height: 50vh;
+	}
+
+
+	/*-------------- Future styling --------------*/
+	.future .container
+	{
+		text-align: center;
+	}
+
+	.future .para-line
+	{
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	.future-protection-imgs
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+
+
+	/*------------------------- Key Numbers ---------------------------*/
+	.key-numbers .container .para-line
+	{
+		max-width: 800px;
+	}
+
+	.key-num-row
+	{
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.key-num-2-col
+	{
+		margin-top: 4rem;
+	}
+
+
+	/*------------------------------------- Our team ----------------------------*/
+	.our-team .container
+	{
+		text-align: center;
+	}
+
+	.team-members
+	{
+		flex-direction: row;
+	}
+
+	.team-member .member-content
+	{
+		text-align: left;
+	}
+	/*------------------------------------- Our team ----------------------------*/
+
+
+
+	/*------------------------------------ About CTA ----------------------------*/
+	.about-cta .container .row
+	{
+		flex-direction: row;
+	}
+
+	.cta-content-col
+	{
+		width: 160%;
+		text-align: left;
+	}
+
+	.cta-btn-col
+	{
+		width: 40% !important;
+	}
+	/*------------------------------------ About CTA ----------------------------*/
+}

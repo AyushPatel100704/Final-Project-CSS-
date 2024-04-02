@@ -1,0 +1,64 @@
+.breadcrumbs {
+	background: linear-gradient(rgba(150, 60, 221, 0.1), rgba(17, 17, 69, 0.8)), url('../img/about-bread.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.breadcrumb-container {
+	height: 34vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.breadcrumb-container .hero-heading {
+	font-size: 3rem;
+}
+
+/*------------------------ News catalogue styling ------------------------*/
+.news-card
+{
+	margin: 4rem 0;
+}
+
+.news-card .featured-image
+{
+	border-radius: 6px;
+}
+
+.news-card > a
+{
+	text-decoration: none;
+	color: var(--third-color);
+}
+
+.news-card p a
+{
+	text-decoration: none;
+}
+/*------------------------ News catalogue styling ------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- Desktop screen styling --------------------------*/
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	.news-catalogue
+	{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+}
